@@ -1,0 +1,32 @@
+{
+  "name": "Animate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:cjs": "rollup -c -f cjs -o dist/Animate.cjs.js",
+    "build:amd":"rollup -c -f amd -o dist/Animate.amd.js",
+    "build:esm":"rollup -c -f esm -o dist/Animate.esm.js",
+    "build:iife":"rollup -c -f iife -o dist/Animate.iife.js -n Animate",
+    "build:umd":"rollup -c -f umd -o dist/Animate.umd.js -n Animate",
+    "build:system":"rollup -c -f system -o dist/Animate.system.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ken-dingxj/Animate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ken-dingxj/Animate/issues"
+  },
+  "homepage": "https://github.com/ken-dingxj/Animate#readme",
+  "devDependencies": {
+    "rollup": "^2.7.1"
+  }
+}
