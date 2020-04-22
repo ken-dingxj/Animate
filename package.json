@@ -1,5 +1,5 @@
 {
-  "name": "Animate",
+  "name": "d_animate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,10 @@
     "build:esm":"rollup -c -f esm -o dist/Animate.esm.js",
     "build:iife":"rollup -c -f iife -o dist/Animate.iife.js -n Animate",
     "build:umd":"rollup -c -f umd -o dist/Animate.umd.js -n Animate",
-    "build:system":"rollup -c -f system -o dist/Animate.system.js"
+    "build:system":"rollup -c -f system -o dist/Animate.system.js",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
   },
   "repository": {
     "type": "git",

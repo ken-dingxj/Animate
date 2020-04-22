@@ -1,0 +1,24 @@
+<!--
+ * @Description: 
+ * @Author: dingxuejin
+ * @Date: 2020-04-22 15:47:21
+ * @LastEditTime: 2020-04-22 16:02:18
+ * @LastEditors: dingxuejin
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/d_animate/dist/Animate.umd.js"></script>
+</head>
+<body>
+    <div id="animate" style="position: absolute;background: blue;height: 100px;width: 100px;"></div>
+</body>
+</html>
+<script>
+    var div = document.getElementById("animate");
+    var animate = new Animate(div);
+    animate.start("left", 500, 10000, "sineaseOut");
+</script>
